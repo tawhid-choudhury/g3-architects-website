@@ -7,4 +7,59 @@
   font-family: "Open Sans", sans-serif;
   font-family: "Space Mono", monospace;
   font-family: "Work Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.btn-primary {
+  margin: 2rem;
+  border: none;
+  background-color: #ff900e;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1.4rem 1.2rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+header > nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 50px 240px;
+}
+nav > ul {
+  display: flex;
+  gap: 2rem;
+}
+nav > ul > li {
+  list-style: none;
+  color: #424242;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.banner,
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content {
+  padding: 100px;
+  max-width: 800px;
+  text-align: center;
+}
+.banner-content h1 {
+  color: #131313;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-content p {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
 }
