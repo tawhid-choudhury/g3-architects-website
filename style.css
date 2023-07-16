@@ -11,7 +11,6 @@
   padding: 0px;
 }
 .btn-primary {
-  margin: 2rem;
   border: none;
   background-color: #ff900e;
   border-radius: 0.5rem;
@@ -56,10 +55,47 @@ nav > ul > li {
   font-weight: 400;
   line-height: 1.8rem;
   margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 .banner img {
+  margin-top: 1.2rem;
   width: 100%;
 }
+main {
+  width: 1440px;
+  margin: auto;
+}
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.feature-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 25px 0px;
+}
+.feature-content h1 {
+  font-size: 45px;
+  padding: 25px 0px;
+}
+.feature-content p {
+  padding: 25px 0px;
+  line-height: 26px;
+  font-size: 16px;
+  color: #727272;
+}
+.quick {
+  color: #727272;
+  font-size: 45px;
+  font-weight: 500;
+}
+.fea {
+  color: #ff900e;
+}
+
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
