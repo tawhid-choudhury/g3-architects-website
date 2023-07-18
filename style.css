@@ -186,12 +186,24 @@ main {
   align-items: center;
   gap: 50px;
 }
+footer {
+  text-align: center;
+  margin-top: 150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fff4e7;
+  margin-bottom: 150px;
+}
 
 /* feature end */
 
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
+  footer {
+    margin: auto;
+    padding: auto;
+  }
   .enjoy-pic {
     width: 100%;
     height: auto;
@@ -295,5 +307,9 @@ main {
   .enjoy-content,
   .feature-content {
     max-width: 100%;
+  }
+  footer {
+    margin: auto;
+    padding: auto;
   }
 }
