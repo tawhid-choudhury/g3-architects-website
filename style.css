@@ -26,6 +26,23 @@
   font-weight: 600;
   cursor: pointer;
 }
+.btn-2 {
+  border: none;
+  background-color: #ff900e;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 3rem 2.8rem;
+  font-size: 3rem;
+  font-weight: 600;
+  cursor: crosshair;
+  position: relative;
+  bottom: 120px;
+  right: 90px;
+}
+.Experience {
+  margin-top: -15px;
+  font-size: 1.5rem;
+}
 header {
   background-color: rgba(255, 144, 14, 0.1);
 }
@@ -94,11 +111,11 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.feature-content h1 {
-  font-size: 45px;
+.h1s {
+  font-size: 3rem;
   font-weight: 700;
 }
-.fea-des {
+.des {
   font-size: 1rem;
   line-height: 162%;
   padding: 20px 0px;
@@ -108,6 +125,27 @@ main {
 }
 .hide {
   display: none;
+}
+.enjoy-features {
+  display: flex;
+  margin-top: 130px;
+  gap: 150px;
+}
+.enjoy-content {
+  max-width: 586px;
+}
+.enjoy-content > h1 {
+  max-width: 468px;
+  padding-left: 21px;
+  border-left: 5px solid #ff900e;
+}
+.cards {
+  margin-top: 10px;
+}
+.card {
+  margin-top: 20px;
+  padding: 30px;
+  box-shadow: 0px 0px 20px lightgray;
 }
 /* feature end */
 
@@ -142,8 +180,13 @@ main {
   main {
     padding: 20px;
   }
-  .features {
+  .features,
+  .enjoy-features {
     flex-direction: column;
+  }
+  .feature-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
   }
   .feature-images {
     grid-template-columns: 1fr 1fr;
@@ -151,8 +194,19 @@ main {
   .feature-images img {
     width: 100%;
   }
+  .enjoy-content,
+  .feature-content {
+    max-width: 100%;
+  }
+  .btn-2 {
+    position: static;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 960px) {
+  main {
+    padding: 20px;
+  }
   nav {
     padding: 20px;
     flex-direction: column;
@@ -165,10 +219,22 @@ main {
   .banner-para {
     padding: 20px;
   }
+  .features,
+  .enjoy-features {
+    flex-direction: column;
+  }
   .banner-content {
     width: 100%;
   }
   .banner-title {
     font-size: 3rem;
+  }
+  .btn-2 {
+    position: static;
+    width: 100%;
+  }
+  .enjoy-content,
+  .feature-content {
+    max-width: 100%;
   }
 }
